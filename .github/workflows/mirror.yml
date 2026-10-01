@@ -7,5 +7,6 @@ on:
 
 jobs:
   sync:
+    if: ${{ secrets.GITLAB_TOKEN != '' && secrets.CODEBERG_TOKEN != '' }}
     uses: nexnc/workflows/.github/workflows/mirror.yml@main
     secrets: inherit
