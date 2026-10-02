@@ -1,3 +1,10 @@
+name: Mirror
+
+on:
+  push:
+    branches: ["*"]
+    tags: ["*"]
+
 jobs:
   sync:
     uses: nexnc/workflows/.github/workflows/mirror.yml@main
